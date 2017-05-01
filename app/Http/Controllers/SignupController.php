@@ -34,7 +34,7 @@ class SignupController extends Controller
                 'password' => request('password')
             ]);
 
-            return redirect('/active-tasks');
+            return redirect('/');
         } else {
             return redirect('/signup')
                 ->withInput()
